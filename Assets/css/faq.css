@@ -1,0 +1,58 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-width: 80%;
+  --header-height: 3rem;
+
+  /* colors */
+  --pry-clr: hsla(215, 100%, 48%, 1);
+  --black-clr-text: hsla(207, 17%, 13%, 1);
+  --black-clr-accent: hsla(245, 17%, 29%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+  --gery: hsla(0, 0%, 51%, 1);
+  --gery-accent: hsla(244, 13%, 75%, 1);
+  --btn-clr: hsla(215, 100%, 48%, 1);
+  --footer-clr: hsla(207, 20%, 27%, 1);
+  --footer-clr-links: hsla(207, 29%, 87%, 1);
+
+  /* font */
+  --pry-font: "Nunito", sans-serif;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+
+  --box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+  }
+}
+
+body {
+  font-family: var(--pry-font);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

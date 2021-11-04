@@ -4,8 +4,280 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0305ae77f6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Chunk</title>
     <link rel="stylesheet" href="/Assets/css/index.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- logo -->
+      <div class="logo">
+        <a href="/index.html">Chunk</a>
+      </div>
+
+      <!-- Mobile navigation toggle -->
+      <i class="fas fa-bars" id="nav-toggle"></i>
+
+      <!-- Navigation bar -->
+      <nav class="nav__bar" id="nav-bar">
+        <!-- Visible nav links -->
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link products"
+              id="products"
+              onclick="showProductMenu(dropDownProducts)"
+              >Products</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link pricing" id="pricing">Pricing</a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link resources"
+              id="resources"
+              onclick="showResourcesMenu(dropDownResources)"
+              >Resources</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link login">Log in</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link get__started">Get started</a>
+          </li>
+        </ul>
+
+        <!-- Drop-down products menu -->
+        <div class="dropdown__products" id="dropdown-products">
+          <div class="container">
+            <!-- first products drop down -->
+            <div>
+              <ul>
+                <li><a href="#">Sales</a></li>
+                <li>
+                  <p>
+                    Create invoices, record sales, manage expenses, and business
+                    performance reports on the go.
+                  </p>
+                </li>
+              </ul>
+              <ul>
+                <li><a href="#">Stores</a></li>
+                <li>
+                  <p>Manage multiple businesses and channels.</p>
+                </li>
+              </ul>
+              <ul>
+                <li><a href="#">Items</a></li>
+                <li><p>Stock taking and reconciliation.</p></li>
+              </ul>
+              <ul>
+                <li><a href="#">Chunk pay</a></li>
+                <li>
+                  <p>
+                    Multiple payment options (Payment links, Bank transfer,
+                    USSD)
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- second products drop down -->
+            <div>
+              <ul>
+                <li><a href="#">CRM</a></li>
+                <li>
+                  <p>
+                    Mini CRM tool to manage relationships with your customers.
+                  </p>
+                </li>
+              </ul>
+              <ul>
+                <li><a href="#">Business reports</a></li>
+                <li>
+                  <p>Insights about business performance.</p>
+                </li>
+              </ul>
+              <ul>
+                <li><a href="#">Hardware tools</a></li>
+                <li>
+                  <p>Hardware tools for better business processes.</p>
+                </li>
+              </ul>
+              <ul>
+                <li><a href="#">POS terminals (coming soon)</a></li>
+                <li>
+                  <p>Point of sale solutions coming soon.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dropdown Resources menu -->
+        <div class="resources__dropdown" id="dropdown-resources">
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Chunk Biz Forum</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Home section -->
+    <section class="home">
+      <div class="wrapper">
+        <div>
+          <h1>Simple book-keeping tool for informal businesses.</h1>
+          <p>
+            Easy to use financial tool in your pocket. Accessible and reliable.
+          </p>
+          <a href="#" class="btn">Get started</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business tools section -->
+    <section class="business__tools">
+      <h2>Simple business management tool to scale up your business.</h2>
+      <div class="cards inventory">
+        <div class="text">
+          <h4>Inventory management</h4>
+          <p>
+            Seamlessly manage your stock on a daily, weekly, and monthly basis.
+          </p>
+        </div>
+        <img
+          src="/Assets/images/undraw_Online_payments.png"
+          alt="SVG showing Online payments"
+        />
+      </div>
+      <div class="cards daily__notifications">
+        <img
+          src="/Assets/images/undraw_Documents.png"
+          alt="SVG showing Online documents"
+        />
+        <div class="text">
+          <h4>Daily notifications</h4>
+          <p>
+            Get notified when your stock runs out or is getting low. Identify
+            top selling products.
+          </p>
+        </div>
+      </div>
+      <div class="cards crm">
+        <div class="text">
+          <h4>CRMs</h4>
+          <p>
+            Manage relationships with customers, link sales to your customers.
+          </p>
+        </div>
+        <img
+          src="/Assets/images/undraw_Shared_goals.png"
+          alt="SVG showing two people with Shared goals"
+        />
+      </div>
+      <div class="cards expense">
+        <img
+          src="/Assets/images/undraw_Metrics.png"
+          alt="SVG showing metrics"
+        />
+        <div class="text">
+          <h4>Expense management</h4>
+          <p>Manage business expenses and get performance reports on the go.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact">
+      <div>
+        <h2>Let's get you started</h2>
+        <a href="mailto:hello@chunk.africa">Contact sales</a>
+      </div>
+      <div>
+        <h2>Become a part of our online community</h2>
+        <p>
+          Join other businesses to gain insights from business experts, support
+          articles, and more.
+        </p>
+      </div>
+      <form>
+        <div>
+          <label for="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email address"
+          />
+        </div>
+        <button class="btn">Join</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="logo-alt">
+          <a href="index.html">Chunk</a>
+      </div>
+      <div class="wrapper">
+        <div class="logo">
+          <a href="index.html">Chunk</a>
+        </div>
+        <div class="products">
+          <h4>Products</h2>
+          <ul>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Stores</a></li>
+            <li><a href="#">Items</a></li>
+            <li><a href="#">Chunk pay</a></li>
+            <li><a href="#">CRM</a></li>
+            <li><a href="#">Business reports</a></li>
+            <li><a href="#">Hardware tools</a></li>
+            <li><a href="#">POS terminals <br>(coming soon)</a></li>
+          </ul>
+        </div>
+        <div class="pricing">
+          <h4>Pricing</h2>
+          <ul>
+            <li><a href="#">Freemium</a></li>
+            <li><a href="#">Basic plan</a></li>
+          </ul>
+        </div>
+        <div class="resources">
+          <h4>Resources</h2>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Chunk Biz Forum</a></li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h4>Contact</h2>
+          <ul>
+            <li><a href="mailto:hello@chunk.africa">Hello@chunk.africa</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/Assets/js/mainNavigation.js"></script>
+  </body>
 </html>
