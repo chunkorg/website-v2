@@ -7,7 +7,7 @@
 }
 
 :root {
-  --header-width: 80%;
+  --header-width: 90%;
   --header-height: 3rem;
 
   /* colors */
@@ -15,8 +15,8 @@
   --black-clr-text: hsla(207, 17%, 13%, 1);
   --black-clr-accent: hsla(245, 17%, 29%, 1);
   --white: hsla(0, 0%, 100%, 1);
-  --gery: hsla(0, 0%, 51%, 1);
-  --gery-accent: hsla(244, 13%, 75%, 1);
+  --gray: hsla(0, 0%, 51%, 1);
+  --gray-accent: hsla(244, 13%, 75%, 1);
   --btn-clr: hsla(215, 100%, 48%, 1);
   --footer-clr: hsla(207, 20%, 27%, 1);
   --footer-clr-links: hsla(207, 29%, 87%, 1);
@@ -55,4 +55,118 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Faq Accordion */
+section.faq {
+  width: var(--header-width);
+  margin: 0 auto;
+  padding: 2rem 0;
+  transition: 0.2s all ease-in-out;
+}
+
+section.faq h1 {
+  color: var(--black-clr-text);
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section.faq .box {
+  max-width: 70vw;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--footer-clr-links);
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+  overflow-y: hidden;
+  height: 40px;
+}
+
+section.faq .box .title {
+  color: hsla(0, 0%, 31%, 1);
+  margin-bottom: 0.25em;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+section.faq .title:hover,
+section.faq .title:focus-visible {
+  color: var(--pry-clr);
+}
+
+section.faq .box .title::after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 15%;
+  right: 0;
+  cursor: pointer;
+}
+
+section.faq .box .content p {
+  color: hsla(0, 0%, 74%, 1);
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+section.faq .box .content p > a {
+  color: var(--footer-clr);
+}
+
+section.faq .box .content p > span {
+  color: var(--footer-clr);
+}
+
+@media (max-width: 768px) {
+  section.faq h1 {
+    font-size: 1.5rem;
+  }
+
+  section.faq .box {
+    max-width: 100vw;
+  }
+
+  section.faq .box .title {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  section.faq .box .title::after {
+    content: "\f105";
+  }
+
+  section.faq .box .content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  section.faq h1 {
+    font-size: 1rem;
+  }
+
+  section.faq .box .title {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  section.faq h1 {
+    font-size: 0.85rem;
+  }
+
+  section.faq .box .title {
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+  }
+
+  section.faq .box .content p {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
 }

@@ -4,14 +4,335 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0305ae77f6.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <title>Chunk | FAQ</title>
+    <title>Chunk</title>
+    <link rel="stylesheet" href="/Assets/css/index.css" />
     <link rel="stylesheet" href="/Assets/css/faq.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- logo -->
+      <div class="logo">
+        <a href="/index.html">Chunk</a>
+      </div>
+
+      <!-- Mobile navigation toggle -->
+      <i class="fas fa-bars" id="nav-toggle"></i>
+
+      <!-- Navigation bar -->
+      <nav class="nav__bar" id="nav-bar">
+        <!-- Visible nav links -->
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link products"
+              id="products"
+              onclick="showProductMenu(dropDownProducts)"
+              >Products</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="/src/pricing.html" class="nav__link pricing" id="pricing"
+              >Pricing</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link resources"
+              id="resources"
+              onclick="showResourcesMenu(dropDownResources)"
+              >Resources</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link login">Log in</a>
+          </li>
+          <li class="nav__item">
+            <a href="/src/signup.html" class="nav__link get__started"
+              >Get started</a
+            >
+          </li>
+        </ul>
+
+        <!-- Drop-down products menu -->
+        <div class="dropdown__products" id="dropdown-products">
+          <div class="container">
+            <!-- first products drop down -->
+            <div>
+              <ul>
+                <li><a href="#">Sales</a></li>
+                <li>
+                  <p>
+                    Create invoices, record sales, manage expenses, and business
+                    performance reports on the go.
+                  </p>
+                </li>
+              </ul>
+              <ul>
+                <li><a href="#">Stores</a></li>
+                <li>
+                  <p>Manage multiple businesses and channels.</p>
+                </li>
+              </ul>
+              <ul>
+                <li><a href="#">Items</a></li>
+                <li><p>Stock taking and reconciliation.</p></li>
+              </ul>
+              <ul>
+                <li><a href="#">Chunk pay</a></li>
+                <li>
+                  <p>
+                    Multiple payment options (Payment links, Bank transfer,
+                    USSD)
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- second products drop down -->
+            <div>
+              <ul>
+                <li><a href="#">CRM</a></li>
+                <li>
+                  <p>
+                    Mini CRM tool to manage relationships with your customers.
+                  </p>
+                </li>
+              </ul>
+              <ul>
+                <li><a href="#">Business reports</a></li>
+                <li>
+                  <p>Insights about business performance.</p>
+                </li>
+              </ul>
+              <ul>
+                <li><a href="#">Hardware tools</a></li>
+                <li>
+                  <p>Hardware tools for better business processes.</p>
+                </li>
+              </ul>
+              <ul>
+                <li><a href="#">POS terminals (coming soon)</a></li>
+                <li>
+                  <p>Point of sale solutions coming soon.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dropdown Resources menu -->
+        <div class="resources__dropdown" id="dropdown-resources">
+          <ul>
+            <li><a href="/src/faq.html">FAQs</a></li>
+            <li><a href="#">Chunk Biz Forum</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="faq">
+      <h1>Frequently Asked Questions (FAQs)</h1>
+      <div class="box">
+        <h2 id="title" class="title">What is Chunk Africa?</h2>
+        <div id="content" class="content">
+          <p class="top">
+            According to definitions from oxford languages, (in psychology or
+            linguistic analysis) group together (connected items or words) so
+            that they can be stored or processed as single concepts.
+          </p>
+          <p class="middle">
+            Putting in the context of business management, chunk groups together
+            each part of your business operations from sales processing
+            (payments and book keeping), managing inventory and customers to
+            getting real time update about business performance all in one
+            place.
+          </p>
+          <p class="bottom">
+            In a short form, Chunk is a simple book keeping solution that helps
+            to receive payment, manage sales records, inventory, customer and
+            get a 360 view of your business performance.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="title">What do I need to open a chunk account?</h2>
+        <div class="content">
+          <p>
+            To get you set up, visit
+            <a href="/index.html" target="_blank">www.chunk.africa</a>. We just
+            need basic information about you and your business and your account
+            is ready in less than 3 minutes.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="title">How can I change my password?</h2>
+        <div class="content">
+          <p>
+            You can change your password by clicking on "Forget password". You
+            will be asked for the email address registered to your account for a
+            reset.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="title">What is on the Chunk dashboard?</h2>
+        <div class="content">
+          <p>
+            Chunk dashboard contains several information about your business
+            performance and transactions. These information include inflow such
+            as revenue, sales, credits which is displayed daily, weekly and
+            monthly.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="title">How to record a sale?</h2>
+        <div class="content">
+          <p>
+            There is a static plus sign at the bottom of the chunk dashboard.
+            When you click on it, a record page pops up and voila, you can input
+            sales record on the page.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="title">What is on the sales dashboard?</h2>
+        <div class="content">
+          <p>
+            The dashboard helps you to see all the sales record for the
+            business. You can filter the sales record by dates, items,
+            customers.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="title">What is on the items page?</h2>
+        <div class="content">
+          <p>
+            The items page helps you with manage inventory. This page gives you
+            in-depth insight on stock performance.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="title">How can I add an item?</h2>
+        <div class="content">
+          <p>
+            You can add items to your inventory through the items record page.
+            When you log into the chunk app, select "Items". On the Items page,
+            there is a purple + sign; click on it to add your items to your
+            inventory.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="title">Can I import my inventory to chunk?</h2>
+        <div class="content">
+          <p>
+            Yes, you can import or upload your inventory to chunk. The file
+            upload can be in excel format.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="title">Can I edit an item?</h2>
+        <div class="content">
+          <p>Yes, you can edit items in your inventory.</p>
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="title">What is on the stores page?</h2>
+        <div class="content">
+          <p>
+            This page helps manage sales across multiple stores, channels as
+            well as businesses
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="title">How many stores can I create or add?</h2>
+        <div class="content">
+          <p>You can create multiple stores or channels on stores page.</p>
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="title">What is on the customers page?</h2>
+        <div class="content">
+          <p>
+            This the a mini CRM page that helps you manage customers that
+            purchase from your business. This page gives you insights about user
+            transaction with your business.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="title">How can I add a customer to my contact list?</h2>
+        <div class="content">
+          <p>
+            You can add customers to your list through your sales record page as
+            well as the customers page.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="title">What is on the business report page?</h2>
+        <div class="content">
+          <p>
+            The business report page gives you a 360 overall insight about your
+            business performance.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="title">Will I get account statements?</h2>
+        <div class="content">
+          <p>
+            Yes, you receive daily summary about your business performance in
+            your mail every day.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <h2 class="title">How can I contact customer support?</h2>
+        <div class="content">
+          <p>
+            You can reach out to us via call on <span>+2347065146514</span> or
+            email on <a href="mailto:hello@chunk.africa">hello@chunk.africa</a>.
+            We are glad to hear from you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let box = document.querySelectorAll(".box");
+
+      for (let i = 0; i < box.length; i++) {
+        box[i].addEventListener("click", () => {
+          let content = document.querySelectorAll(".content");
+          if (box[i].style.height === "fit-content") {
+            box[i].style.height = "50px";
+          } else {
+            box[i].style.height = "fit-content";
+          }
+        });
+      }
+    </script>
+
+    <script src="/Assets/js/mainNavigation.js"></script>
+  </body>
 </html>
