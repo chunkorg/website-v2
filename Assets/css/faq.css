@@ -86,6 +86,7 @@ section.faq .box {
 
 section.faq .box .title {
   color: hsla(0, 0%, 31%, 1);
+  font-size: 1.35rem;
   margin-bottom: 0.25em;
   position: relative;
   width: 100%;
